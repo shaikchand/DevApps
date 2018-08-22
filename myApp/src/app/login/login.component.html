@@ -1,0 +1,14 @@
+<form name="frm" [formGroup]="loginForm">
+
+<p>
+Username : <input class="form-control" formControlName="unm">
+</p>
+
+<p>
+Password : <input type="password" class="form-control" formControlName="pass">
+</p>
+
+<p>
+<button class="btn btn-primary" (click)="checkLogin()">Login</button>
+</p>
+</form>

@@ -1,0 +1,28 @@
+<div class="col-lg-12">
+<table class="table">
+<th>Name</th><th>Dept</th>
+<tr *ngFor="let x of employeeArr">
+<td>
+<a routerLink="/employeeinfo/{{x.id-1}}">
+{{x.name}}
+</a>
+</td><td>{{x.dept}}</td>
+</tr>
+</table>
+
+</div>
+
+<span myd>All is good</span>
+<br>
+
+<span myColor>All is Indian</span><br>
+<input [(ngModel)]="count">
+<div *ngIf="count">
+Inside
+<span *myLoop="count">My country is great!</span>
+</div>
+
+<hr>
+
+Checking condition : <br>
+<span *myCondition="false">I lives in india.. India wins!!</span>
